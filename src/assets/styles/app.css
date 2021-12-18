@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slider-items {
+  height: 300px;
+}
+
+.slider-item {
+  height: 300px;
+}
+
+.slide-fade-enter-active {
+  transition: all 0.3s ease;
+}
+
+.slide-fade-leave-active {
+  transition: all 0.8s cubic-bezier(1, 0.5, 0.8, 1);
+}
+
+.slide-fade-enter,
+.slide-fade-leave-to {
+  transform: translateX(10px);
+  opacity: 0;
+}
+
+.slider-indicator-wrap {
+  margin-top: 30px;
+}
+
+.slider-indicator {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.slider-indicator-active {
+  background-color: rgb(227, 226, 226);
+}
+
+.content-wrap {
+  height: 100%;
+  justify-content: center;
+}
